@@ -3,6 +3,7 @@ description: Report a Next.js issue.
 type: Bug
 body:
   - type: markdown
+    id: description
     attributes:
       value: |
         This template is used for reporting a Next.js issue. [Example](https://github.com/vercel/next.js/tree/canary/examples)-related issues should be reported using [this](https://github.com/vercel/next.js/issues/new?assignees=&labels=type%3A+example%2Ctemplate%3A+bug&template=2.example_bug_report.yml) issue template instead.
@@ -17,6 +18,7 @@ body:
         - Start a discussion in the ["Help"](https://github.com/vercel/next.js/discussions/categories/help) section.
         - Ask a question in [Vercel Community](https://vercel.community/tags/c/help/9/nextjs).
   - type: input
+    id: code
     attributes:
       label: Link to the code that reproduces this issue
       description: |
@@ -29,6 +31,7 @@ body:
     validations:
       required: true
   - type: textarea
+    id: steps
     attributes:
       label: To Reproduce
       description: A step-by-step description of how to reproduce the issue, based on the linked reproduction. Screenshots can be provided in the issue body below. If using code blocks, make sure that [syntax highlighting is correct](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting) and double check that the rendered preview is not broken.
@@ -39,6 +42,7 @@ body:
     validations:
       required: true
   - type: textarea
+    id: expecteds
     attributes:
       label: Current vs. Expected behavior
       description: |
@@ -49,6 +53,7 @@ body:
     validations:
       required: true
   - type: textarea
+    id: env
     attributes:
       label: Provide environment information
       description: Please run `next info` in the root directory of your project and paste the results. You might need to use `npx --no-install next info` if next is not in the current PATH.
@@ -74,6 +79,7 @@ body:
     validations:
       required: true
   - type: dropdown
+    id: area
     attributes:
       label: Which area(s) are affected? (Select all that apply)
       multiple: true
@@ -126,6 +132,7 @@ body:
     validations:
       required: true
   - type: dropdown
+    id: stage
     attributes:
       label: Which stage(s) are affected? (Select all that apply)
       multiple: true
@@ -138,10 +145,12 @@ body:
     validations:
       required: true
   - type: markdown
+    id: version
     attributes:
       value: |
         Another way you can help the maintainers' job is to pinpoint the `canary` version of `next` that introduced the issue. Check out our [releases](https://github.com/vercel/next.js/releases), and try to find the first `canary` release that introduced the issue. This will help us narrow down the scope of the issue, and possibly point to the PR/code change that introduced it. You can install a specific version of `next` by running `npm install next@<version>`.
   - type: textarea
+    id: additional
     attributes:
       label: Additional context
       description: |
