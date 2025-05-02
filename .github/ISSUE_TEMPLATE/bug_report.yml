@@ -1,12 +1,10 @@
 name: Report an issue
-description: Report a Next.js issue.
-# type: Bug
+description: Report a Makeswift issue.
 body:
   - type: markdown
-    id: description
     attributes:
       value: |
-        This template is used for reporting a Next.js issue. [Example](https://github.com/vercel/next.js/tree/canary/examples)-related issues should be reported using [this](https://github.com/vercel/next.js/issues/new?assignees=&labels=type%3A+example%2Ctemplate%3A+bug&template=2.example_bug_report.yml) issue template instead.
+        This template is used for reporting a Makeswift issue. [Example](https://github.com/vercel/next.js/tree/canary/examples)-related issues should be reported using [this](https://github.com/vercel/next.js/issues/new?assignees=&labels=type%3A+example%2Ctemplate%3A+bug&template=2.example_bug_report.yml) issue template instead.
 
         Feature requests should be opened in [discussions](https://github.com/vercel/next.js/discussions/new?category=ideas). For more information about opening a feature request, [read more](https://github.com/vercel/next.js/blob/canary/contributing/core/adding-features.md).
 
@@ -145,7 +143,6 @@ body:
     validations:
       required: true
   - type: markdown
-    id: version
     attributes:
       value: |
         Another way you can help the maintainers' job is to pinpoint the `canary` version of `next` that introduced the issue. Check out our [releases](https://github.com/vercel/next.js/releases), and try to find the first `canary` release that introduced the issue. This will help us narrow down the scope of the issue, and possibly point to the PR/code change that introduced it. You can install a specific version of `next` by running `npm install next@<version>`.
