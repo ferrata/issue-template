@@ -1,10 +1,12 @@
 name: Bug report - Catalyst
 description: You're running into a reproducible error while developing with Catalyst.
+title: "[x] is not working when I [y]"
 body:
   - type: markdown
     attributes:
       value: |
         We really appreciate the help making Catalyst better. Every issue helps!
+
   - type: textarea
     id: description
     attributes:
@@ -20,7 +22,7 @@ body:
       label: Link to the code that reproduces this issue
       description: |
         Please link to a **public** GitHub repository that can be used to reproduce this issue, if possible. It'll help fix the bug faster.
-        Minimal reproductions should be created from our repository and should include only changes that contribute to the issue. 
+        Minimal reproductions should be created from [our repository](https://github.com/bigcommerce/catalyst) and should include only changes that contribute to the issue. 
       placeholder: 'https://github.com/user/my-minimal-catalyst-issue-reproduction'
 
   - type: textarea
@@ -50,5 +52,5 @@ body:
     id: additional
     attributes:
       label: Additional context
-      description: |
+      placeholder: |
         Add any other context about the problem here.
