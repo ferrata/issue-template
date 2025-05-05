@@ -5,14 +5,12 @@ body:
     attributes:
       value: |
         We really appreciate the help making Catalyst better. Every issue helps!
-
   - type: textarea
     id: description
     attributes:
       label: Describe the bug
       description: |
         A clear and concise description of what the bug is.
-      placeholder: ''
     validations:
       required: true
   
