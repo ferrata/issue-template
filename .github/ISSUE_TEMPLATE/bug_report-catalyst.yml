@@ -22,7 +22,6 @@ body:
       label: Link to the code that reproduces this issue
       description: |
         Please link to a **public** GitHub repository that can be used to reproduce this issue, if possible. It'll help fix the bug faster.
-
         Minimal reproductions should be created from our repository and should include only changes that contribute to the issue. 
       placeholder: 'https://github.com/user/my-minimal-catalyst-issue-reproduction'
 
