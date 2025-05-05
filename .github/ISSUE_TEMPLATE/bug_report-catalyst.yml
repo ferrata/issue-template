@@ -1,4 +1,4 @@
-name: \U0001F41E\U0001F4DD Bug report
+name: 🐞📝 Bug report
 description: You're running into a reproducible error while developing with Catalyst.
 title: "[x] is not working when I [y]"
 body:
